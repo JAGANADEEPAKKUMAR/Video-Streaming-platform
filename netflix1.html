@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: #fff;
+        margin: 0;
+        height: 100%;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      .logo img {
+        width: 100px;
+      }
+
+      .banner {
+        position: relative;
+      }
+
+      .banner img {
+        height: 90%;
+        width: 100%;
+      }
+
+      .movie-details {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+      }
+
+      .movie-details img {
+        width: 150px;
+        margin-right: 20px;
+      }
+
+      .movie-details nav {
+        color: #fff;
+      }
+
+      .movie-details h2 {
+        margin: 0;
+      }
+
+      .movie-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .movie-item {
+        position: relative;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .movie-item img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px;
+        background-color: rgb(255, 54, 54);
+        font-size: 0.8em;
+        border-radius: 3px;
+      }
+
+      .movie-item p {
+        margin: 10px 0 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+      }
+
+      h1 {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img
+          style="width: 100px"
+          src="https://i.ibb.co/r5krrdz/logo.png"
+          alt="Netflix"
+        />
+      </nav>
+    </header>
+    <div class="banner">
+      <img
+        src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUn9C2LlJK485hKDTxVt8FBUpxEp_hEH_FTadIsdabp2Q2D2qUgX7AyD6cBZY9Y8Bvhx7MMQJLXB0Z_uOCEOqRivxGgNGPikPCBK.jpg?r=005"
+        alt="Maharaja"
+      />
+      <div class="movie-details">
+        <img
+          src="//occ-0-4747-2186.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdE8A9fv6mkPAIN2Jh8A0UDoxGUiJ-DujSXc3fP3FpL5S-L1kORAK1Gb8GIXXyQaJDeDarfftXL-bigjp3DvvuqJOsjhiPmnTX0WWEia7Mvk.png?r=991"
+          alt="Maharaja"
+        />
+        <nav>
+          <h2>Maharaja</h2>
+          <p>2024 | Maturity Rating: U/A 16+ | 2h 20m | Drama</p>
+          <p>
+            When his prized possession gets stolen, a barber seeks help from the
+            police,
+          </p>
+          <p>
+            who jeer at his request — until they learn what they're really
+            looking for.
+          </p>
+          <p>Starring: Vijay Sethupathi, Anurag Kashyap, Mamtha Mohandas</p>
+        </nav>
+      </div>
+    </div>
+    <h1>More Like This</h1>
+    <div class="movie-grid">
+      <div class="movie-item">
+        <img
+          src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbfwx8U6qb4kFvA5Xum_V-f9zqNB1hBf9TdnBABA8m-VPMsnnC8OUJxeJI485vlhcQc3J1uOBRek1GmxdR-WimecUrpyb2VWrfA3MC18lBLytR4gB0hhig-Z0rjK08TU-0XjHA5v4BQOw4e5TlBuwPQXy-8Jqeor4RuvsJ8o688WpFkx8PADzDGS3iONJ2Optdo5WM2FmBT_Y4kh3DPJmtnFoop_OpcRF4vGRzrSs8Pop3OlVD8zVlCTGntSi4WYksWffpWAU6HObyWUuEbianXw37NUNjhb5SgAYoIEDevohr9klm6s9RaanjeXO11RaJM2umZ7dJ8JstaqIEyatOg.jpg?r=f0a"
+          alt="Srikanth"
+        />
+        <div class="label">Recently Added</div>
+        <p>Srikanth</p>
+      </div>
+      <div class="movie-item">
+        <img
+          src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSMxV_7ODTkEpAilDap2BnEuCrCb9zOlDVRBIDWwzIlxlWQcGNFokphZ-0PNW5dqr6OWahtBviRbkQXjKcGmGY6C1juWW_pURB63PCf3ZTwyrIoGcN3sh3igzY6aByxQqx-mgmhUf_yiWPcyHRAkFI3J8AApkZBF8ZrhN-3OBgrJbCYR5Ixn8vzDORF9lIIlHNL4WyQjlldfq8dzbuyPh8_kM0xq0NLNrS-W7apQqOSPX5AVhXwk6YqBe6k1z-p3_1TCyq2Bw62ko7AZU9bUJthDHJByKc_iYgnznaJ4R84Pd9v5MrJ2wA3DLfmNQAlU9MLis9vjkW2BxWrs9a9CMPI.jpg?r=1fc"
+          alt="Savi"
+        />
+        <div class="label">Recently Added</div>
+        <p>Savi</p>
+      </div>
+      <div class="movie-item">
+        <img
+          src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa_zG7wlW6_cCCIMLRRKTJfI7GfKHhYEk5wfQ0YgKHKIXEzrXQgPUg-ES5sQZivZISWDdAeENmtzYo3QL_K8vC_Q94qO3Rlcbd4.jpg?r=033"
+          alt="Laapataa Ladies"
+        />
+        <p>Laapataa Ladies</p>
+      </div>
+      <div class="movie-item">
+        <img
+          src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSGPmCund-ye-PKwpSFspyvax7rKzsnSBrhNme784vAjDhglFLT4kd7a__thKPaRvhVEKcAWC8f0Kdz3DNfOdZMYbKKFDCX6qOF_cPDZU_bnpyRxegOnnl6N1Bss7EZBt1JdN5N3M6xDWxlrLZSMKuD5E66rf_OezHVLf7x3VBcjPXeRh5L2mf8J1h0juZdK3h-ToQlq8QRtu2z8SE5thYILarNTJ1vevBB_V0Nr7i3MetoJOrJdxujBqUogOEYHCcGUOCWDVKN1mJIoBGmm683cv5ysENf0wYn0VhIGt7GKWza-AZq7CqEyZ8bh8LSEPlnxNZt6IvVWkl_lFEPMQL0.jpg?r=c9a"
+          alt="Mr. & Mrs. Mahi"
+        />
+        <div class="label">Recently Added</div>
+        <p>Mr. & Mrs. Mahi</p>
+      </div>
+      <div class="movie-item">
+        <img
+          src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeYOwt43Qbc_MdUj7_ijb7rWI4t9INWI8Gzlh36Bgd3jlQiNWT3lt2cxKmXfysTMgRfHSbjLbt62U0s9I_W8Lbu-JFZXuG6N0dE.jpg?r=434"
+          alt="Animal"
+        />
+        <p>Animal</p>
+      </div>
+      <div class="movie-item">
+        <img
+          src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVx9XeGF_87h4odP_kFwqC8-piPPbFyxiUQLZzG97sPE_L6_40jVHVjTMpnCSLh5SsVFqmwKZ5buXfiiFgZ--XFugjYGO_r00UPk7cxQtKsb1q_q90sxX31vLgvXAwLFNc-VtgeShro6FRBjIctmxmOD0nzVvWd3sekSdM9hUrThqy-LNLjAMWAYSh5_n5A.jpg?r=66f"
+          alt="Heeramandi: The Diamond Bazaar"
+        />
+        <p>Heeramandi: The Diamond Bazaar</p>
+      </div>
+    </div>
+  </body>
+</html>

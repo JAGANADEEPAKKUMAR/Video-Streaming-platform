@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register & Login</title>
+    <!-- <link rel="stylesheet" href="style.css" />-->
+    <script
+      src="https://kit.fontawesome.com/4e04319a2b.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/8ef88e03-6f89-4c75-ae51-f8da7d252358/6ac07e5f-07ca-4543-8540-f22edce8bb02/TW-en-20210208-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        font-size: 20px;
+        background: black;
+        width: 400px;
+        height: 430px;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        position: left;
+        z-index: 1;
+      }
+      form {
+        width: 100%;
+      }
+      .form-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 1.3rem;
+        margin-bottom: 0.4rem;
+        color: white;
+      }
+      .input-group {
+        padding: 1% 0;
+        position: relative;
+        width: 100%;
+      }
+      .input-group i {
+        position: absolute;
+        color: black;
+      }
+      input {
+        color: white;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #757575;
+        padding-left: 1.5rem;
+        font-size: 15px;
+      }
+      input:focus {
+        background-color: transparent;
+        outline: transparent;
+        border-bottom: 2px solid hsl(327, 90%, 28%);
+      }
+      input::placeholder {
+        color: transparent;
+      }
+      label {
+        color: white;
+        position: relative;
+        top: -1.3em;
+        cursor: auto;
+        transition: 0.3s ease all;
+      }
+      input:focus ~ label,
+      input:not(:placeholder-shown) ~ label {
+        top: -3em;
+        color: hsl(327, 90%, 28%);
+        font-size: 15px;
+      }
+      .recover {
+        text-align: right;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .recover a {
+        text-decoration: none;
+        color: rgb(125, 125, 235);
+      }
+      .recover a:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+      button {
+        font-size: 1.1rem;
+        padding: 10px 0;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        width: 100%;
+        background: red;
+        color: white;
+        cursor: pointer;
+        transition: 0.9s;
+      }
+      button:hover {
+        background: #07001f;
+      }
+      .or {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+      .links {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 4rem;
+        margin-top: 0.9rem;
+        font-weight: bold;
+      }
+      #signUpButton,
+      #signInButton {
+        color: red;
+        border: none;
+        background-color: transparent;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      #signUpButton:hover,
+      #signInButton:hover {
+        text-decoration: underline;
+        color: red;
+      }
+      .messageDiv {
+        background-color: hsl(327, 90%, 28%);
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        opacity: 0;
+        animation: fadeOut 7s forwards;
+      }
+      .share-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .share-icons a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 30px;
+        background: linear-gradient(135deg, #041d3d, #fff, crimson);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="logo">
+      <img src="https://i.ibb.co/r5krrdz/logo.png" alt="Netflix" />
+    </nav>
+
+    <div class="container" id="signIn">
+      <h1 class="form-title">Log In</h1>
+      <form method="post" action="" id="loginForm">
+        <div id="signInMessage" class="messageDiv" style="display: none"></div>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <label for="password">Password</label>
+        </div>
+        <button class="btn" id="submitSignIn">
+          <a style="color: white; text-decoration: none" href="netflix.html"
+            >Log In</a
+          >
+        </button>
+      </form>
+      <div class="links">
+        <p style="font-size: 15px; color: white">Don't have an account yet?</p>
+        <button id="signUpButton">
+          <a style="color: red; text-decoration: none" href="signup.html"
+            >Sign Up</a
+          >
+        </button>
+      </div>
+      <div class="share-icons">
+        <a href="#" onclick="shareOnFacebook()"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="#" onclick="shareOnTwitter()"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="#" onclick="shareOnLinkedIn()"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#" onclick="shareOnInstagram()"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- Added Instagram icon -->
+        <!-- Add more social media icons as needed -->
+      </div>
+    </div>
+    <!--
+    <script src="script.js">
+      const signUpButton = document.getElementById('signUpButton');
+      const signInButton = document.getElementById('signInButton');
+      const signInForm = document.getElementById('signIn');
+      const signUpForm = document.getElementById('signup');
+
+      signUpButton.addEventListener('click', function() {
+        signInForm.style.display = "none";
+        signUpForm.style.display = "block";
+      })
+      signInButton.addEventListener('click', function() {
+        signInForm.style.display = "block";
+        signUpForm.style.display = "none";
+      })
+    </script>
+  -->
+    <!-- Firebase SDKs (v9+ modular syntax) -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+      import {
+        getAuth,
+        signInWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCSJX1AIYdj9NevFRRstpKd_SqU9dbe22k",
+        authDomain: "movie-d5ce0.firebaseapp.com",
+        projectId: "movie-d5ce0",
+        storageBucket: "movie-d5ce0.appspot.com",
+        messagingSenderId: "200820086558",
+        appId: "1:200820086558:web:68811116734474a79e1b0f",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              alert("Login successful");
+              window.location.href = "netflix.html"; // Redirect to dashboard
+            })
+            .catch((error) => {
+              console.error("Error logging in:", error.message);
+              alert("Error logging in: " + error.message);
+            });
+        });
+    </script>
+  </body>
+</html>

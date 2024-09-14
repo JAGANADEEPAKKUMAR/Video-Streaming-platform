@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Indian Movies & TV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: #fff;
+        padding: 50px;
+      }
+      .container {
+        background-color: black;
+      }
+
+      .movie-grid,
+      .tv-show-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .movie-item,
+      .tv-show-item {
+        position: relative;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .movie-item img,
+      .tv-show-item img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .movie-item .label,
+      .tv-show-item .label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px;
+        background-color: rgb(255, 54, 54);
+        font-size: 0.8em;
+        border-radius: 3px;
+      }
+
+      .movie-item p,
+      .tv-show-item p {
+        margin: 10px 0 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img style="width: 100px;" src="https://i.ibb.co/r5krrdz/logo.png" alt="Netflix" />
+      </nav>
+    </header>
+    <h1>Indian Movies & TV</h1>
+    <p>
+      Laugh, cry, sigh, scream, shout or whatever you feel like with these
+      <p>comedies, dramas, romances, thrillers and so much more, all hailing from</p>
+      <p>India.</p>
+    </p>
+    <div class="container">
+      <section class="movies">
+        <h2>Indian Movies</h2>
+        <div class="movie-grid">
+          <div class="movie-item"><a style="text-decoration:none ; color: white;" href="netflix1.html">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXUDjEHClZcCZgm-5UafFaYFSFXGb96kmYBwNq71rriMHWHMZY83exiicchhK-lhdOsq15K6vacqcmqlPk2_cpXpPsLttRNxtER5NLceNw7m4Ujh1qHTTRjWJaChtdaK0bvsCJNTfRS4RHAwbrgJ-HjQ3h3PvGOAAIV44fF7sbDglzfyHBU1i-hzAR037_8C_rwiYXy4zhaOxnW2VY8mXtjLrhuuUyr-r3Ea7rXsLkcX757FgBqMWzpQ--kSil258pvVI6rfaTB0OHhtDrzsfJmyG5IQoscreZ85K7Epwc0ASX-X7jZA55olXPl1uTjz1B76EvE_I2QgkzBsRU8R8tk.jpg?r=0a0"
+              alt="Maharaja"
+            />
+            <div class="label">Recently Added</div>
+            <p>Maharaja</p></a>
+          </div>
+          <div class="movie-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbfwx8U6qb4kFvA5Xum_V-f9zqNB1hBf9TdnBABA8m-VPMsnnC8OUJxeJI485vlhcQc3J1uOBRek1GmxdR-WimecUrpyb2VWrfA3MC18lBLytR4gB0hhig-Z0rjK08TU-0XjHA5v4BQOw4e5TlBuwPQXy-8Jqeor4RuvsJ8o688WpFkx8PADzDGS3iONJ2Optdo5WM2FmBT_Y4kh3DPJmtnFoop_OpcRF4vGRzrSs8Pop3OlVD8zVlCTGntSi4WYksWffpWAU6HObyWUuEbianXw37NUNjhb5SgAYoIEDevohr9klm6s9RaanjeXO11RaJM2umZ7dJ8JstaqIEyatOg.jpg?r=f0a"
+              alt="Srikanth"
+            />
+            <div class="label">Recently Added</div>
+            <p>Srikanth</p>
+          </div>
+          <div class="movie-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSMxV_7ODTkEpAilDap2BnEuCrCb9zOlDVRBIDWwzIlxlWQcGNFokphZ-0PNW5dqr6OWahtBviRbkQXjKcGmGY6C1juWW_pURB63PCf3ZTwyrIoGcN3sh3igzY6aByxQqx-mgmhUf_yiWPcyHRAkFI3J8AApkZBF8ZrhN-3OBgrJbCYR5Ixn8vzDORF9lIIlHNL4WyQjlldfq8dzbuyPh8_kM0xq0NLNrS-W7apQqOSPX5AVhXwk6YqBe6k1z-p3_1TCyq2Bw62ko7AZU9bUJthDHJByKc_iYgnznaJ4R84Pd9v5MrJ2wA3DLfmNQAlU9MLis9vjkW2BxWrs9a9CMPI.jpg?r=1fc"
+              alt="Savi"
+            />
+            <div class="label">Recently Added</div>
+            <p>Savi</p>
+          </div>
+          <div class="movie-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa_zG7wlW6_cCCIMLRRKTJfI7GfKHhYEk5wfQ0YgKHKIXEzrXQgPUg-ES5sQZivZISWDdAeENmtzYo3QL_K8vC_Q94qO3Rlcbd4.jpg?r=033"
+              alt="Laapataa Ladies"
+            />
+            <p>Laapataa Ladies</p>
+          </div>
+          <div class="movie-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSGPmCund-ye-PKwpSFspyvax7rKzsnSBrhNme784vAjDhglFLT4kd7a__thKPaRvhVEKcAWC8f0Kdz3DNfOdZMYbKKFDCX6qOF_cPDZU_bnpyRxegOnnl6N1Bss7EZBt1JdN5N3M6xDWxlrLZSMKuD5E66rf_OezHVLf7x3VBcjPXeRh5L2mf8J1h0juZdK3h-ToQlq8QRtu2z8SE5thYILarNTJ1vevBB_V0Nr7i3MetoJOrJdxujBqUogOEYHCcGUOCWDVKN1mJIoBGmm683cv5ysENf0wYn0VhIGt7GKWza-AZq7CqEyZ8bh8LSEPlnxNZt6IvVWkl_lFEPMQL0.jpg?r=c9a"
+              alt="Mr. & Mrs. Mahi"
+            />
+            <div class="label">Recently Added</div>
+            <p>Mr. & Mrs. Mahi</p>
+          </div>
+          <div class="movie-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeYOwt43Qbc_MdUj7_ijb7rWI4t9INWI8Gzlh36Bgd3jlQiNWT3lt2cxKmXfysTMgRfHSbjLbt62U0s9I_W8Lbu-JFZXuG6N0dE.jpg?r=434"
+              alt="Animal"
+            />
+            <p>Animal</p>
+          </div>
+        </div>
+      </section>
+      <section class="tv-shows">
+        <h2>Indian TV Shows</h2>
+        <div class="tv-show-grid">
+          <div class="tv-show-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYVEdkYu_MF22poUFiLjwYgBVdHnzbSue32Kyx8lcCwrXBm0QSkG-vRmZM0C-ZmAsiUy5p14givKf9udeGMP8-IaL9aCq12ztod7KP_6eeK0AHW2UAkrdB8ydfwMR6jmt96P.jpg?r=92b"
+              alt="The Great Indian Kapil Show"
+            />
+            <p>The Great Indian Kapil Show</p>
+          </div>
+          <div class="tv-show-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVx9XeGF_87h4odP_kFwqC8-piPPbFyxiUQLZzG97sPE_L6_40jVHVjTMpnCSLh5SsVFqmwKZ5buXfiiFgZ--XFugjYGO_r00UPk7cxQtKsb1q_q90sxX31vLgvXAwLFNc-VtgeShro6FRBjIctmxmOD0nzVvWd3sekSdM9hUrThqy-LNLjAMWAYSh5_n5A.jpg?r=66f"
+              alt="Heeramandi: The Diamond Bazaar"
+            />
+            <p>Heeramandi: The Diamond Bazaar</p>
+          </div>
+          <div class="tv-show-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaHZ9ruQp1GZMIZg2orroTQjcxCOc-o0M11penZ8jIZ5BMg7DkTB__GFQnyodLvj3vMA50EpdxkCOjmHbJhle48T_nsNq_fjRsTiUlKdygo1PlnzwwugXjM6TkY44GwjeH1e9p_pRvr8CRrRNN7npFaZhP-goCujqpLz5-6W8aLGU-BG8X8li-xuf9xNAO4vReLWx8wuTeA3fscsty1htf1HqgRvGCmba0Otndk74cI7SBip1hwlqII4olX4VaW9Ws3BCI7PFBSho8UwFlpeyxOcTvgDVsRzrhZAegvFWSGWHSORuDIdOSlhPGSrT6cYosobzUz_tqVpv5m5mD1ybzDoDt-4WEhhv3FtshtNNgeTjLTlZ-E.jpg?r=edf"
+              alt="Tribhuvan Mishra CA Topper"
+            />
+            <div class="label">Recently Added</div>
+            <p>Tribhuvan Mishra CA Topper</p>
+          </div>
+          <div class="tv-show-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQ6hP1uQUfzSaOBG0SdCdyEuBjTrceiBRg-rllP5aJmBj34KQqIQCRzb-zAJb6IgUcJ_FYI8uyvmezMiYwSzCxi2psraG0mghQ2kz8dTM8uD6xrE5-e69Hl-tvam8xlSF9-1q9RzlSWKSUhx727xxBmzOlHel6Xu8F9xqm0XsOFJHrzrANadz3nQwQ7oSgI.jpg?r=19c"
+              alt="Kota Factory"
+            />
+            <p>Kota Factory</p>
+          </div>
+          <div class="tv-show-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcJuCa7T2Yd81yCQ_jdoiGH4MgmqcRHqkq522upR5hWKcHT5tyKIZ78JiLcU_D3wc8ucl66OGIbNqEOQkgJeq2nAL0-yF5dJJvrLU6P4yYyBMfIr7n_7_g_q5fxiA3NWwR1mLL3IPbGKOxTJloMGSxPy9CeHj08_vfzDZt3QhzXKi3H9REXFe5BYoCV7Mx0.jpg?r=296"
+              alt="Maamla Legal Hai"
+            />
+            <p>Maamla Legal Hai</p>
+          </div>
+          <div class="tv-show-item">
+            <img
+              src="https://occ-0-4747-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSCzyyYPkXXkpm_UKXmLpZYa3DwgTcmfHfonGcPGZRgPKAlN6Ubr02eZMwhOxt_6n65r1Z1c3J2nK6LfL67P726ze_mvUvX7ujtFTOxWnmvbzBVMrNB61yoxMpXtBkPQKewHEeRELp9IiWFxU7P1bB74NO3ly3LCHUxksxO2-2lJKmurvLmMDhGKkrPRz0M.jpg?r=5da"
+              alt="The Railway Men - The Bhopal 19"
+            />
+            <p>The Railway Men - The Bhopal 19</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
